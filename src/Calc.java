@@ -23,6 +23,7 @@ public class Calc {
         }
     }
 
+
     private static void add() throws InterruptedException {
         boolean validNums = false;
         while(!validNums) {
