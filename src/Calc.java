@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class Calc {
     public static void main() throws InterruptedException {
         boolean validCalc = false;
@@ -20,6 +22,7 @@ public class Calc {
             }
         }
     }
+
     private static void add() throws InterruptedException {
         boolean validNums = false;
         while(!validNums) {

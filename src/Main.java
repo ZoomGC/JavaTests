@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         boolean validChoice = false;
@@ -24,7 +26,6 @@ public class Main {
             else {
                 System.out.println("You have used an integer but have not selected an available choice");
                 Thread.sleep(2000);
-
             }
         }
     }
