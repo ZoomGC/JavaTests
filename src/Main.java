@@ -7,7 +7,7 @@ public class Main {
         //Fib fib = new Fib();
         int programChoice = 0;
         while (!validChoice) {
-            System.out.println("Please enter a choice between\n1) Fibonnaci\n2) Calculator\n");
+            System.out.println("Please enter a choice between\n1) Fibonnaci\n2) Calculator");
             Scanner programInput = new Scanner(System.in);
             try {
                 programChoice = programInput.nextInt();
