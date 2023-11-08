@@ -17,20 +17,18 @@ public class Calc {
             try {
                 Scanner calcInput = new Scanner(System.in);
                 calcChoice = calcInput.nextInt();
-                while (!validNums) {
-                    try {
-                        Scanner numberInput = new Scanner(System.in);
-                        System.out.print("Please enter your first number: ");
-                        num1 = numberInput.nextLong();
-                        System.out.print("Please enter your second number: ");
-                        num2 = numberInput.nextLong();
-                        validNums = true;
-                    } catch (Exception e) {
-                        System.out.println("Please enter values of the long data type, values over this will" +
-                                "not be accepted!");
-                        Thread.sleep(2000);
-                    }
+                try {
+                    Scanner numberInput = new Scanner(System.in);
+                    System.out.print("Please enter your first number: ");
+                    num1 = numberInput.nextLong();
+                    System.out.print("Please enter your second number: ");
+                    num2 = numberInput.nextLong();
+                } catch (Exception e) {
+                    System.out.println("Please enter values of the long data type, values over this will" +
+                            "not be accepted!");
+                    Thread.sleep(2000);
                 }
+                
 
                 switch (calcChoice) {
                     case 1 -> add(num1, num2);
